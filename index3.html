@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>使用for循环语句求出1~100的和</title>
+    </head>
+    <body>
+        <script>
+            var a=0;
+            for(b=1;b<=100;b++){
+                a+=b;
+            }
+            document.write(a);
+        </script>
+    </body>
+</html>
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>判断闰年</title>
+    <script type="text/javascript">
+        var date=prompt('请输入年份：')
+        if (date%4==0&&date%100!=0) {
+            alert('闰年');
+        }else if(date%400==0){
+            alert('闰年');
+        }else{
+            alert('不是闰年');
+        }
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
+ 
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<h2>JavaScript 函数序列</h2>
+ 
+<p>JavaScript 函数按照它们被调用的顺序执行。</p >
+ 
+<p id="demo"></p >
+ 
+<script>
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+ 
+function myFirst() {
+  myDisplayer("Hello");
+}
+ 
+function mySecond() {
+  myDisplayer("Goodbye");
+}
+ 
+mySecond();
+myFirst();
+</script>
+ 
+</body>
+</html>
